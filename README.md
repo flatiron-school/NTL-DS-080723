@@ -2,11 +2,6 @@
 
 ### Written Instructions to Connect to This Repository:
 
-
-This is a new line of code.
-
-This is a second line of code
-
 1. FORK this repository, creating a copy on your own GitHub account
 
 2. Then clone your fork down to your local computer
