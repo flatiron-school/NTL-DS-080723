@@ -32,3 +32,8 @@ git fetch upstream
 ```
 git merge upstream/main -m "meaningful message about what you're updating"
 ```
+
+7. Push these changes from your local repo on your machine, to your GitHub repo in the cloud.
+```
+git push origin main
+```
