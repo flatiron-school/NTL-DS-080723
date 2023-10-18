@@ -3,6 +3,7 @@
 import pandas as pd
 from matplotlib import pyplot as plt
 from sklearn.metrics import ConfusionMatrixDisplay, recall_score,accuracy_score, precision_score, f1_score, RocCurveDisplay
+import math
 
 
 # class ModelWithCV():
@@ -232,11 +233,10 @@ class SaveModel():
      def plot_model_confusion_matrix(self, ax, dataset='train'):
           (x, y) = self.get_data(dataset)
 
-          cm_display = DisplayConfusionMatrix.from_estimator(self.model, 
+          cm_display = ConfusionMatrixDisplay.from_estimator(self.model, 
                                              x,
                                              y,
-                                             ax=ax,
-                                             name=self.model_name,                
+                                             ax=ax,              
                                              normalize='true', 
                                              cmap='plasma')
           cm_display.im_.set_clim(0, 1)
